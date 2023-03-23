@@ -1,6 +1,5 @@
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 import useCurrentUser from "@/hooks/useCurrentUser";
@@ -39,12 +38,7 @@ const Profiles = () => {
           >
             <div className="group flex-row w-44 mx-auto">
               <div className="w-44 h-44 rounded-md flex items-center justify-center border-2 border-transparent group-hover:cursor-pointer group-hover:border-white overflow-hidden">
-                <Image
-                  src="/images/profile-blue.png"
-                  alt="profile-avatar"
-                  height={80}
-                  width={175}
-                />
+                <img src="/images/profile-blue.png" alt="profile-icon" />
               </div>
               <div className="mt-4 text-gray-400 text-2xl text-center group-hover:text-white">
                 {user?.name}

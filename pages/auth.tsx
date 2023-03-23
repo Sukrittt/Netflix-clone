@@ -1,4 +1,3 @@
-import Image from "next/image";
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
 import { signIn } from "next-auth/react";
@@ -50,7 +49,7 @@ const Auth = () => {
     <div className="relative h-full w-full bg-[url('/images/netflix-auth.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
-          <Image src="/images/logo.png" alt="logo" width={175} height={80} />
+          <img className="h-12" src="/images/logo.png" alt="logo" />
         </nav>
         <div className="flex justify-center">
           <div className="bg-black/70 p-16 self-center mt-2 lg:w-2/5 lg:max-w-md rounded-md w-full">
